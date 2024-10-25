@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python Debugger: Current File with Arguments",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pytest",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "args": [
+        "--config",
+        "configs/gda-3.cfg",
+        "--test-environments",
+        "firmware",
+        "--exclude-marker",
+        "cypress",
+        "--collect-only",
+        "tests"
+      ]
+    }
+  ]
+}
