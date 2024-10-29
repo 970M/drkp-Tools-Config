@@ -22,11 +22,16 @@
     "python.testing.cwd": "${workspaceFolder}",
     "python.testing.pytestArgs": [
       "--ignore=third_party", //ignore third_party folder containing tests from titan live
+      //"--config=configs/gda.cfg"
       "--config=configs/gda.cfg",
-
+      "--color=yes"
+      //"--config=configs/gitlab-ci_5-ref.cfg"
+      //"--config=configs/gitlab-ci_8-9-ref.cfg"
+      //"--config=configs/gitlab-kubernetes-standalone-1.cfg"
       //"--update-version=http://firmware.anevia.com/roms-dev/nea-dvr-sw-4.19.0-rc3.afi"
       // "--update-version=4.14.1-rc4", //if you want to update your firmware version
       //"--update-version"
+      // default value is "nightly", should be image tag for K8S and AFI URL for firmware
       //"--reportportal -o rp_api_key=gda-rp-token_rIFcluKnQe29aMZZoGlmok5kFlzoXqxl0glXxYKn7e_zkVC-u-C5EJ51ypSiUiYF -o rp_launch=py:fw-st-live-dev -o rp_endpoint=http://report-portal.ateme.net:8080 -o rp_launch_attributes=:DVR-14623 PLAN_ID:DVR-14041 VERSION:4.23.0 PIPELINE_TYPE:test-retry PRODUCT_TYPE:firmware"
       // "--reportportal",
       // "-o",
@@ -37,7 +42,6 @@
       // "rp_endpoint=http://report-portal.ateme.net:8080",
       // "-o",
       // "rp_launch_attributes=:DVR-14623 PLAN_ID:DVR-14041 VERSION:4.23.0 PIPELINE_TYPE:test-retry PRODUCT_TYPE:firmware"
-      "--color=yes"
     ],
     "testing.defaultGutterClickAction": "debug",
     "debug.allowBreakpointsEverywhere": true,
